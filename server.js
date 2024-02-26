@@ -11,7 +11,7 @@ app.use("/api/products", productRoute)
 
 
 
-mongoose.connect('mongodb+srv://devleonardokofi:JCkrsk92XqwT06m3@apidb.lmbnxxf.mongodb.net/Node-API?retryWrites=true&w=majority&appName=APIDB')
+mongoose.connect('mongodb+srv://<user>:<password>@<database name lowercase>.lmbnxxf.mongodb.net/Node-API?retryWrites=true&w=majority&appName=<database name as original>')
   .then(() => {
     console.log('Connected!');
     app.listen(3000, () => {
